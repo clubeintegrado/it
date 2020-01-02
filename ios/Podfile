@@ -1,0 +1,47 @@
+use_frameworks!
+platform :ios, '11.0'
+workspace 'taxi'
+def common_pods
+  pod 'FirebaseUI/Phone'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
+  pod 'Eureka'
+  pod 'ImageRow'
+  pod 'Fabric'
+  pod 'Crashlytics'
+  pod 'BraintreeDropIn'
+  pod 'Stripe'
+  pod 'MessageKit'
+  pod 'StatusAlert'
+  pod 'Kingfisher'
+  pod 'Socket.IO-Client-Swift'
+end
+
+target 'rider' do
+  project 'rider/rider.xcodeproj'
+  common_pods
+  pod 'lottie-ios'
+  pod 'MarqueeLabel/Swift'
+end
+
+target 'driver' do
+  project 'driver/driver.xcodeproj'
+  common_pods
+  pod 'iCarousel'
+end
+
+target 'Shared' do
+  project 'Shared/Shared.xcodeproj'
+  pod 'MessageKit'
+  pod 'StatusAlert'
+  pod 'Eureka'
+  pod 'Stripe'
+  pod 'Socket.IO-Client-Swift'
+end
+
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    end
+end

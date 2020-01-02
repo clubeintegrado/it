@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme.
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+ -->
+    <!--style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" /-->
+
+    <style name="ImagePickerTheme" parent="ef_BaseTheme">
+        <item name="colorPrimary">@color/md_teal_500</item>
+        <item name="colorPrimaryDark">@color/md_teal_700</item>
+        <item name="colorAccent">@color/md_amber_700</item>
+    </style>
+
+    <style name="Theme.Default" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="ContentMainBadgeTitle" parent="AppTheme">
+        <item name="android:textColor">#a9a9a9</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>

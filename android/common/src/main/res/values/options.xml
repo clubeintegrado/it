@@ -1,0 +1,22 @@
+<resources>
+    <string name="email" translatable="false"></string>
+    <string name="website" translatable="false"></string>
+    <string name="twitter" translatable="false"></string>
+    <string name="instagram" translatable="false"></string>
+    <string name="facebook" translatable="false"></string>
+    <string name="playStore" translatable="false"></string>
+    <string name="fabric_key" templateMergeStrategy="preserve" translatable="false"></string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false"></string>
+    <string name="defaultLocation" translatable="false">40.1792,44.4991</string>
+    <string name="default_language">en_US</string>
+    <bool name="singlePointMode">true</bool>
+    <integer name="maximumDestinations">5</integer>
+    <bool name="request_payment_enabled">true</bool>
+    <integer name="minimum_payment_request">10</integer>
+    <integer name="charge_first">10</integer>
+    <integer name="charge_second">20</integer>
+    <integer name="charge_third">50</integer>
+    <integer name="minimum_points">2</integer>
+    <integer name="maximum_points">2</integer>
+    <bool name="use_miles">false</bool>
+</resources>
